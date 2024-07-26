@@ -1,0 +1,76 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #1DA1F2;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#title-input {
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0d95e8;
+}
+
+.tweets-section {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.tweet {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tweet.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.tweet.show {
+    opacity: 1;
+    transform: translateY(0);
+}
